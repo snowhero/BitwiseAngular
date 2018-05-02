@@ -1,0 +1,10 @@
+<div class="navigation">
+  <ul>
+    <li class="list-decorations" *ngFor="let item of navArr">
+<!--      <a [href]="item.url">  OR href="{{item.url}}" -->
+      <a [routerLink]="[item.url]"> <!-- Angular routing way -->
+        <p>{{ item.title }}</p>
+      </a>
+    </li>
+  </ul>
+</div>
